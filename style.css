@@ -1,0 +1,129 @@
+@keyframes arrowUp {
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes arrowDown {
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes arrowRight {
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes arrowLeft {
+  50% {
+    transform: translateX(-50px);
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.canvasOuter {
+  height: auto;
+  width: auto;
+  position: relative;
+  display: inline-block;
+}
+
+canvas {
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.start {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.goal {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: red;
+  display: none;
+}
+
+.js-show {
+  display: inline-block;
+}
+
+.clear {
+  cursor: pointer;
+  background: black;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  transform: translate(-50%,0);
+  box-shadow: 2px 2px orange;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.clear:hover {
+  transform: translate(-50%, 2px);
+  box-shadow: 2px 2px transparent;
+}
+
+#Layer_1{
+  width: 50px;
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  transform: translateX(-50%);
+}
+
+.one {
+  animation: arrowDown 1s ease-out infinite;
+}
+
+.two {
+  animation: arrowUp 1s ease-out infinite;
+}
+
+.three {
+  animation: arrowRight 1s ease-out infinite;
+}
+
+.four {
+  animation: arrowLeft 1s ease-out infinite;
+}
+
+
+
+
